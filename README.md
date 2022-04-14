@@ -7,18 +7,24 @@ rows from each of the inputs along with an additional column that has the
 filename from which the row came (only the file's basename, not the entire path).
 Use `filename` as the header for the additional column.
 
-## Input & Output
-We will run your code as follows
+## Running the code
+
+Language used: The code is written in python.
+
+Note: `csv_manager.py` is the object manager for `csv-combiner.py`. Thus, both are needed to run the csv combiner.
+
 ```
-$ ./csv-combiner.php ./fixtures/accessories.csv ./fixtures/clothing.csv > combined.csv
+$ python csv-combiner.py filename1 filename2 > output.csv
 ```
 
-However, the CSV files inside the fixtures are not the only files we will run
-through. We will run your code through files > 2 GB to see if you hit memory limits.
 
 ## Example
 
 Given two input files named `clothing.csv` and `accessories.csv`.
+
+```
+$ python ./csv-combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv > combined.csv
+```
 
 |email_hash|category|
 |----------|--------|
